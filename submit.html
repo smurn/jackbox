@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Submit unit tests to testswarm</title>
+    </head>
+    <body>
+        <form action="http://www.smurn.org/testswarm/api.php?action=addjob" method="POST">
+			<input type="hidden" name="authID" value="jackbox">
+			<input type="hidden" name="authToken" value="65809bf6ce75470b5161446a1b74ec584e89b9c8">
+			<input type="hidden" name="runMax" value="1">
+			<input type="text" name="jobName" value="master">
+			<input type="text" name="browserSets[]" value="laptop">
+			<input type="text" name="runNames[]" value="all">
+			<input type="text" name="runUrls[]" value="https://rawgithub.com/smurn/jackbox/master/qunit.html">
+			<input type="submit" name="send">
+		</form>
+    </body>
+</html>
