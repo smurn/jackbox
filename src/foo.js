@@ -1,4 +1,4 @@
-define([], function(){
+define(["registry"], function(registry){
     
     function Foo(){};
     
